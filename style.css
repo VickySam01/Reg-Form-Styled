@@ -17,6 +17,7 @@
     box-shadow: 0 0 15px rgba(55, 55, 55, 0.1);;
     padding: 20px;
     border-radius: 16px;
+    border: 1px solid #907501 50%;
 }
 
 
@@ -92,16 +93,16 @@ button{
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background: rgb(2, 47, 170);
+    background: #907501;
     border-radius: 1rem;
     border-style: none;
     text-align: center ;
 }
 
 button:hover{
-    background: lightblue;
-    color: darkblue;
-    font-weight: 600;
+    background: #4d4109;
+    color: white;
+    font-weight: normal;
     
 }
 
