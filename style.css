@@ -6,7 +6,7 @@
     border-radius: 16px;
 }
 .centre{
-    background-image: url("/styledregform/bgcentre.png");
+    background-image: url("bgcentre.png");
     background-size: 100%;
     position: absolute;
     top: 50%;
@@ -108,6 +108,6 @@ button:hover{
 
 
 body{
-    background-image: url("/styledregform/modern-background-with-lines.jpg");
+    background-image: url("modern-background-with-lines.jpg");
     background-size: 100%;
 }
