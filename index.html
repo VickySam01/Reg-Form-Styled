@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,74 +12,110 @@
     <h2> Registration Form</h2>
 
 
-  <div class="centre">
-    <h3> Please fill in your details</h3>
+    <div class="container">
+        <h5 class="h5 mb-4"> Please fill in your details </h5>
 
-    <form>
-        <div class>
-            <label for="fullname"> Full name: </label>
-            <input type="text" id="fullname" placeholder="Enter your full name" size="40" name="fullname" autofocus> 
 
-        </div>
-    
-        <div>
-            <label for="username"> Username: </label>
-            <input type="text" id="username" placeholder="Enter your username" size="40" name="username" required> 
-        </div>
+        <form class="justify-content-center">
 
-        <div>
-            <label for="email"> Email address: </address> </label>
-            <input type="email" id="email" placeholder="Enter your email" size="40" name="email" required>
-        </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="first-name" class="form-label"> First name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="e.g. Victoria" class="form-control form-control-md">
+                    </div>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label"> Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="e.g. Samuel" class="form-control form-control-md">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="e-mail" class="form-label"> E-mail address</label>
+                        <input type="text" id="e-mail" name="e-mail" placeholder="e.g. vmarc1018@gmail.com" class="form-control form-control-md">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="DOB" class="form-label"> Date of birth </label>
+                        <input type="date" id="DOB" name="DOB" placeholder="Select your birth date" class="form-control form-control-md">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="country" class="form-label"> Country</label>
+                        <select name="countries" id="countries" class="form-select form-select-md">
+                            <option value="" selected> Select your country</option>
+                            <option value="Nigeria"> Nigeria </option>
+                            <option value="China"> China </option>
+                            <option value="USA"> USA </option>
+                            <option value="UK"> UK </option>
+                            <option value="Canada"> Canada </option>
+                            <option value="Australia"> Australia </option>
+                            <option value="Kenya"> Kenya </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-6">
+
+                    <div class="mb-3">
+                        <label for="chooseFile" class="form-label">Profile image</label>
+                        <input class="form-control" type="file" id="chooseFile">
+                      </div>
+                </div>
+
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label"> Password</label>
+                <input type="password" id="password" name="password" placeholder="Create your password" class="form-control form-control-md">
+                <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                  </div>
+            </div>
+
+
+            <div class="mb-4">
+                <input type="checkbox" id="terms" name="terms" class="form-check-input">
+                <label for="terms" class="form-label"> I agree to the terms and conditions </label>
+            </div>
+
+
+            <button type="submit"> Submit </button>
+        </form>
+
+    </div>
         
-
-         <div>
-            <label for="DOB"> Date of birth: </label>
-            <input type="date" id="DOB" placeholder="Enter your birth date" name="DOB" required> 
-        </div>
-        
-
-        <div>
-            <label for="file"> Upload file </label>
-            <input type="file" id="file" placeholder="Upload file">
-        </div>
-       
-
-        <div>
-            <label for="country"> Country: </label>
-            <select id="country" name="country">
-                <option value="Select country"> Select country </option>
-                <option value="Nigeria"> Nigeria </option>
-                <option value="China"> China </option>
-                <option value="USA"> USA </option>
-                <option value="UK"> UK </option>
-                <option value="Canada"> Canada </option>
-                <option value="Australia"> Australia </option>
-                <option value="Kenya"> Kenya </option>
-                <option value="Singapore"> Singapore </option>
-                <option value="Japan"> Japan </option>
-                <option value="Dubai"> Dubai </option>
-                <option value="Ghana"> Ghana </option>
-                <option value="Zambia"> Zambia </option>
-
-            </select>
-        </div>
-        
-
-        <div>
-            <label for="password"> Password: </label>
-            <input type="password" id="password" placeholder="Enter your password" size="40" name="password" required> 
-        </div>
-        
-        <div>
-            <label for="terms&conditions" >
-            <input type="checkbox" id="terms&conditions" name="terms&conditions" value="terms">
-            I agree to the terms and conditions  </label> 
-        </div>
-        
-
-       <button type="submit"> Submit</button>
     </form>
 </div>
     
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

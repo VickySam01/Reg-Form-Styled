@@ -1,88 +1,49 @@
-.form{
-    width: 30%;
-    height: 60%;
-    background-color: white;
-   
-    border-radius: 16px;
-}
-.centre{
+
+
+.container{
     background-image: url("bgcentre.png");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
-    height: 70%;
+    width: 42rem;
+    height: 40rem;
     box-shadow: 0 0 15px rgba(55, 55, 55, 0.1);;
-    padding: 20px;
+    padding: 24px;
     border-radius: 16px;
-    border: 1px solid #907501 50%;
+    border: 1px solid #01235e 50%;
 }
 
 
     
-input[type=text], input[type=email], select {
-    width: 60%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=file] {
+   
     border-radius: 4px;
-    border: 1px solid darkgrey;
-    
+   
 }
-
-input[type=file]{
-    width: 55%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    border-radius: 4px;
-    border: 1px dashed darkgrey;
-
-}
-input[type=date]{
-    width: 30%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    border-radius: 4px;
-    border: 1px solid darkgrey;
-
-}
-
-input[type=password] {
-    width: 55%;
-    padding: 10px;
-    margin: 5px 0 22px 0;
-    border-radius: 4px;
-    border: 1px solid darkgrey;
-}
-
-input[type=checkbox]{
-    padding: 10px;
-    margin: 5px 0 22px 0;
-}
-
-form{
-    font-size: medium;
-    color: rgb(30, 28, 28);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.form-text{
+    color: #848484;
+    font-size: 14px;
     font-style: normal;
 }
 
-
-h3{
-    color: rgb(19, 30, 37);
-    font-size: medium;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 8px 0 20px 0;
-    padding-bottom: 8px;
-   
+.form-label{
+    font-size: 17px;
 }
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 h2{
     color: white;
     text-align: center;
-    margin-top: 16px;
-    padding-top: 4%;
+    margin-bottom: 16px;
+    padding-top: 3%;
+    font-size: 28px;
 }
 
 button{
@@ -93,14 +54,14 @@ button{
     font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background: #907501;
+    background: #01235e;
     border-radius: 1rem;
     border-style: none;
     text-align: center ;
 }
 
 button:hover{
-    background: #4d4109;
+    background: #011331;
     color: white;
     font-weight: normal;
     
@@ -109,6 +70,7 @@ button:hover{
 
 
 body{
-    background-image: url("modern-background-with-lines.jpg");
+    background-image: url("stunning-dark-navy-blue-abstract-background-with-hexagon-pattern-dark-grey-black-color.jpg");
     background-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
 }
